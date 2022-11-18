@@ -1,0 +1,10 @@
+{
+    "ui_service":"5000",
+    "sensor_service":"5001",
+    "controller_service":"5002",
+    "model_service":"5003",
+    "app_service":"5004",
+    "scheduler_service":"5005",
+    "deployer_service":"5006",
+    "node_service":"5007"
+}

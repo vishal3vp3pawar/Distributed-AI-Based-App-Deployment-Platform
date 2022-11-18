@@ -1,0 +1,10 @@
+azure_storage-file-share
+Flask==2.0.2
+Flask_Login==0.6.0
+Flask_PyMongo==2.3.0
+Flask_SQLAlchemy==2.5.1
+importlib_metadata==4.11.3
+numpy==1.22.2
+pymongo==4.1.0
+requests==2.22.0
+Werkzeug==2.0.3

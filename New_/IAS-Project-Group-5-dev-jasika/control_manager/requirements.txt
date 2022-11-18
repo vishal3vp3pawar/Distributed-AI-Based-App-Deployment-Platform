@@ -1,0 +1,6 @@
+azure-storage-file-share
+Flask==2.0.2
+Flask_Cors==3.0.10
+itsdangerous==2.0.1
+pymongo==4.1.0
+requests==2.22.0

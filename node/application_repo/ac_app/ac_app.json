@@ -1,0 +1,1 @@
+{"application-name": "ac_app", "start-time": "2022-04-08 18:42:30", "end-time": "2022-04-08 18:44:30", "sensor_details": {"sensor_type": ["temp"], "sensor_location": "vindhya-block", "no_of_instances": 1}, "controller_details": {"sensor_type": "ac", "sensor_location": "vindhya-block"}, "model_details": {"model_name": "ac_prediction_model"}}

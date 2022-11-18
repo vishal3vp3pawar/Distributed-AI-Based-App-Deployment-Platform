@@ -1,0 +1,94 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{ url_for('static',filename='../static/file_upload_css.css') }}" media="screen">
+    <script class="u-script" type="text/javascript" src="{{ url_for('static',filename='../static/file_upload_js.js') }}" defer=""></script>
+    <title>Upload File</title>
+</head>
+<body style="overflow: scroll;">
+
+    <div class="form-body">
+        <div class="row">
+            <div class="form-holder">
+                <div class="form-content">
+                    <div style="overflow: scroll;" class="form-items">
+                        <h3>Application</h3>
+                        <form action = "/form_uploader" method="post" class="requires-validation" novalidate>
+
+                            <div class="col-md-12">
+                                <label style="padding-top: 8px;">Application Name:</label>
+                               <input style="margin-top: 0px;" class="form-control" type="text" name="appid" required>
+                               <div class="valid-feedback">Application Name field is valid!</div>
+                               <div class="invalid-feedback">Application Name field cannot be blank!</div>
+                            </div>
+
+                            <div class="col-md-12">
+                                <label style="padding-top: 6px;">Model Type:</label>
+                                <input style="margin-top: 0px;" class="form-control" type="text" name="mtype" required>
+                                 <div class="valid-feedback">Model Type field is valid!</div>
+                                 <div class="invalid-feedback">Model Type field cannot be blank!</div>
+                            </div>
+
+                            <div class="col-md-12">
+                                <label style="padding-top: 6px;">Sensor Type:</label>
+                                <input style="margin-top: 0px;" class="form-control" type="text" name="stype" required>
+                            <div class="valid-feedback">Sensor Type field is valid!</div>
+                            <div class="invalid-feedback">Sensor Type field cannot be blank!</div>
+                            </div>
+
+                        
+
+                           <div class="col-md-12">
+                                    <label style="padding-top: 6px;">Sensor Location:</label>
+                                    <input style="margin-top: 0px;" class="form-control" type="text" name="sloc" required>
+                                <div class="valid-feedback">Sensor Location field is valid!</div>
+                                <div class="invalid-feedback">Sensor Location field cannot be blank!</div>
+                           </div>
+
+                           <div class="col-md-12">
+                            <label style="padding-top: 6px;">Controller Type:</label>
+                            <input style="margin-top: 0px;" class="form-control" type="text" name="ctype" required>
+                        <div class="valid-feedback">Sensor Type field is valid!</div>
+                        <div class="invalid-feedback">Sensor Type field cannot be blank!</div>
+                        </div>
+
+                    
+
+                       <div class="col-md-12">
+                                <label style="padding-top: 6px;">Controller Location:</label>
+                                <input style="margin-top: 0px;" class="form-control" type="text" name="cloc" required>
+                            <div class="valid-feedback">Sensor Location field is valid!</div>
+                            <div class="invalid-feedback">Sensor Location field cannot be blank!</div>
+                       </div>
+
+                           <div class="col-md-12">
+                            <label style="padding-top: 6px;">Start Time Stamp:</label>
+                           <input style="margin-top: 0px;" class="form-control" type="text" name="stime" required>
+                           <div class="valid-feedback">Start Time Stamp field is valid!</div>
+                           <div class="invalid-feedback">Start Time Stamp field cannot be blank!</div>
+                        </div>
+
+                        <div class="col-md-12">
+                            <label style="padding-top:6px;">End Time Stamp:</label>
+                           <input style="margin-top: 0px;" class="form-control" type="text" name="etime" required>
+                           <div class="valid-feedback">End Time Stamp field is valid!</div>
+                           <div class="invalid-feedback">End Time Stamp field cannot be blank!</div>
+                        </div>
+
+
+                         
+                            <div class="form-button mt-3">
+                                <button id="submit" type="submit" class="btn btn-primary">Submit</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script class="u-script" type="text/javascript" src="../static/file_upload_js.js" defer=""></script>
+</body>
+</html>

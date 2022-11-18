@@ -1,0 +1,5 @@
+azure-storage-file-share
+Flask==2.0.2
+numpy==1.22.2
+pymongo==4.1.0
+requests==2.22.0

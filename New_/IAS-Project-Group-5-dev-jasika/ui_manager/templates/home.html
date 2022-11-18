@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="" en>
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/style.css') }}">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <title>Hello, world!</title>
+</head>
+<style>
+    body {
+        background: #649173;
+        /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #DBD5A4, #649173);
+        /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #DBD5A4, #649173);
+        /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    }
+</style>
+
+</html>
+
+<body style="background-color:#b1b8c7;">
+
+    <div class="b-example-divider"></div>
+
+    <div class="container px-4 py-5" id="hanging-icons">
+        <h2 class="pb-2 border-bottom" >Welcome {{ data }} </h2>
+        <!-- <h2 class="pb-2 border-bottom">Welcome to Our IAS Project</h2> -->
+        <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+
+            <div class="col d-flex align-items-start">
+                <div class="icon-square bg-light text-dark flex-shrink-0 me-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="27" fill="currentColor"
+                        class="bi bi-file-fill" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M4 0h8a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2z" />
+                    </svg>
+                </div>
+                <div>
+                    <h2>Sensor Manager</h2>
+                    <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another
+                        sentence and probably just keep going until we run out of words.</p>
+                    <a href="/sensor_type_upload" class="btn btn-primary">
+                        Manage Type
+                    </a>
+                    <a href="/sensor_instance_upload" class="btn btn-primary">
+                        Manage Instance
+                    </a>
+                </div>
+            </div>
+            <div class="col d-flex align-items-start">
+                <div class="icon-square bg-light text-dark flex-shrink-0 me-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="27" fill="currentColor"
+                        class="bi bi-file-fill" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M4 0h8a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2z" />
+                    </svg>
+                </div>
+                <div>
+                    <h2>Controller Manager</h2>
+                    <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another
+                        sentence and probably just keep going until we run out of words.</p>
+                    <a href="/controller_type_upload" class="btn btn-primary">
+                        Manage Type
+                    </a>
+                    <a href="/controller_instance_upload" class="btn btn-primary">
+                        Manage Instance
+                    </a>
+                </div>
+            </div>
+            <div class="col d-flex align-items-start">
+                <div class="icon-square bg-light text-dark flex-shrink-0 me-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="27" fill="currentColor"
+                        class="bi bi-file-fill" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M4 0h8a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2z" />
+                    </svg>
+                </div>
+                <div>
+                    <form action="/model_upload">
+                        <h2>Model Developer</h2>
+                        <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another
+                            sentence and probably just keep going until we run out of words.</p>
+                        <input type="submit" class="btn btn-primary" value="Upload Model">
+                    </form>
+                </div>
+            </div>
+            <div class="col d-flex align-items-start">
+                <div class="icon-square bg-light text-dark flex-shrink-0 me-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="27" fill="currentColor"
+                        class="bi bi-file-fill" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M4 0h8a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2z" />
+                    </svg>
+                </div>
+                <div>
+                    <form action="/app_upload">
+                        <h2>Application Developer</h2>
+                        <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another
+                            sentence and probably just keep going until we run out of words.</p>
+                        <input type="submit" class="btn btn-primary" value="Upload App">
+                    </form>
+                </div>
+            </div>
+            <div class="col d-flex align-items-start">
+                <div class="icon-square bg-light text-dark flex-shrink-0 me-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="27" fill="currentColor"
+                        class="bi bi-file-fill" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M4 0h8a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2z" />
+                    </svg>
+                </div>
+                <div>
+                    <form action="/configuration_upload">
+                        <h2>End User (Configurer)</h2>
+                        <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another
+                            sentence and probably just keep going until we run out of words.</p>
+                        <!-- <input type="submit" class="btn btn-primary" onclick="console.  log('hello')" value="Configure"> -->
+                        <div style="flex-direction: column;">
+                            <input type="submit" class="btn btn-primary" value="Configure">
+                            <a  href="/view_deployed_apps_current_user" class="btn btn-primary">
+                            View Deployed App
+                            </a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+
+            <div class="col d-flex align-items-start">
+                <div class="icon-square bg-light text-dark flex-shrink-0 me-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="27" fill="currentColor"
+                        class="bi bi-file-fill" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M4 0h8a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2z" />
+                    </svg>
+                </div>
+                <div>
+                    <h2>Logout</h2>
+                    <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another
+                        sentence and probably just keep going until we run out of words.</p>
+                    <a href="/logout" class="btn btn-primary">
+                    Logout
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+        crossorigin="anonymous"></script>
+
+</body>

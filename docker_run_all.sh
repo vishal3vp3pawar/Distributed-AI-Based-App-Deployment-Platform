@@ -1,0 +1,11 @@
+gnome-terminal --title="ui_manager" -x bash -c "docker run --rm -it -v /etc/localtime:/etc/localtime:ro  --net=host  --name ui_manager ui_manager"
+gnome-terminal --title="model_manager" -x bash -c "docker run --rm -it -v /etc/localtime:/etc/localtime:ro --net=host  --name model_manager model_manager"
+gnome-terminal --title="app_service" -x bash -c "docker run --rm -it -v /etc/localtime:/etc/localtime:ro --net=host  --name app_service app_service"
+gnome-terminal --title="scheduler" -x bash -c "docker run --rm -it -v /etc/localtime:/etc/localtime:ro --net=host  --name scheduler scheduler"
+gnome-terminal --title="deployer" -x bash -c "docker run --rm -it -v /etc/localtime:/etc/localtime:ro --net=host  --name deployer deployer"
+gnome-terminal --title="sensor_manager" -x bash -c "docker run --rm -it -v /etc/localtime:/etc/localtime:ro --net=host  --name sensor_manager sensor_manager"
+gnome-terminal --title="control_manager" -x bash -c "docker run --rm -it -v /etc/localtime:/etc/localtime:ro --net=host  --name control_manager control_manager"
+gnome-terminal --title="node_manager" -x bash -c "docker run --rm -it -v /etc/localtime:/etc/localtime:ro --net=host  --name node_manager node_manager"
+
+gnome-terminal --title="node" -x bash -c "python3 ./node/app.py; exec bash"
+gnome-terminal --title="controllers" -x bash -c "python3 ./controllers/ac_server.py 7001; exec bash"

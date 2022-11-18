@@ -1,0 +1,24 @@
+{
+    "control_instances": [
+        {
+            "sensor_type": "fan",
+            "sensor_ip": "127.0.0.1",
+            "sensor_port": "7000",
+            "sensor_location": "vindhya-block",
+            "control_functions": [
+                "switchOn",
+                "switchOff"
+            ]
+        },
+        {
+            "sensor_type": "ac",
+            "sensor_ip": "127.0.0.1",
+            "sensor_port": "7001",
+            "sensor_location": "vindhya-block",
+            "control_functions": [
+                "switchOn",
+                "switchOff"
+            ]
+        }
+    ]
+}

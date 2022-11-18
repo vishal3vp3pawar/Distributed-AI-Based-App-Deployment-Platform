@@ -1,0 +1,14 @@
+{
+    "app_name": "ac_app",
+    "model_type": "ac_prediction_model",
+    "sensor": [
+        {
+            "sensor_type": "temp"
+        }
+    ],
+    "controller": [
+        {
+            "sensor_type": "ac"
+        }
+    ]
+}

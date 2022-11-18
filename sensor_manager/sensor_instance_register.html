@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <link rel="stylesheet" type="text/css" href="slide navbar style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Jost:wght@500&display=swap" rel="stylesheet">
+
+
+
+  <style media="screen">
+    h1 {
+      text-align: center;
+    }
+
+
+    *:before,
+    *:after {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: #080710;
+    }
+
+    .background {
+      width: 430px;
+      height: 520px;
+      position: absolute;
+      transform: translate(-50%, -50%);
+      left: 50%;
+      top: 50%;
+    }
+
+    .background .shape {
+      height: 200px;
+      width: 200px;
+      position: absolute;
+      border-radius: 50%;
+    }
+
+    .shape:first-child {
+      background: linear-gradient(#1845ad,
+          #23a2f6);
+      left: -80px;
+      top: -80px;
+    }
+
+    .shape:last-child {
+      background: linear-gradient(to right,
+          #ff512f,
+          #f09819);
+      right: -30px;
+      bottom: -80px;
+    }
+
+    form {
+      height: 590px;
+      width: 400px;
+      background-color: rgba(255, 255, 255, 0.13);
+      position: absolute;
+      transform: translate(-50%, -50%);
+      top: 50%;
+      left: 50%;
+      border-radius: 10px;
+      backdrop-filter: blur(10px);
+      border: 2px solid rgba(255, 255, 255, 0.1);
+      box-shadow: 0 0 40px rgba(8, 7, 16, 0.6);
+      padding: 10px 35px;
+    }
+
+    form * {
+      font-family: 'Poppins', sans-serif;
+      color: #ffffff;
+      letter-spacing: 0.5px;
+      outline: none;
+      border: none;
+    }
+
+    form h3 {
+      font-size: 32px;
+      font-weight: 500;
+      line-height: 42px;
+      text-align: center;
+    }
+
+    label {
+      display: block;
+      margin-top: 30px;
+      font-size: 16px;
+      font-weight: 500;
+    }
+
+    input {
+      display: block;
+      height: 50px;
+      width: 100%;
+      background-color: rgba(255, 255, 255, 0.07);
+      border-radius: 3px;
+      padding: 0 10px;
+      margin-top: 8px;
+      font-size: 14px;
+      font-weight: 300;
+    }
+
+    ::placeholder {
+      color: #e5e5e5;
+    }
+
+    button {
+      margin-top: 50px;
+      width: 100%;
+      background-color: #ffffff;
+      color: #080710;
+      padding: 15px 0;
+      font-size: 18px;
+      font-weight: 600;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .social {
+      margin-top: 30px;
+      display: flex;
+    }
+
+    .social div {
+      background: red;
+      width: 150px;
+      border-radius: 3px;
+      padding: 5px 10px 10px 5px;
+      background-color: rgba(255, 255, 255, 0.27);
+      color: #eaf0fb;
+      text-align: center;
+    }
+
+    .social div:hover {
+      background-color: rgba(255, 255, 255, 0.47);
+    }
+
+    .social .fb {
+      margin-left: 25px;
+    }
+
+    .social i {
+      margin-right: 4px;
+    }
+  </style>
+</head>
+
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+<body>
+
+
+  <!-- <div class="w3-sidebar w3-bar-block w3-black w3-card" style="width:130px">
+  <h5 class="w3-bar-item"><b>MENU</b></h5>
+  <button style="color:rgb(14, 123, 187);" class="w3-bar-item w3-button tablink" onclick="openLink(event, 'Fade')">End User</button>
+  <button style="color:rgb(14, 123, 187);" class="w3-bar-item w3-button tablink" onclick="openLink(event, 'Left')">Sensor Manager</button>
+  <button style="color:rgb(14, 123, 187);" class="w3-bar-item w3-button tablink" onclick="openLink(event, 'Right')">Plateform Configurer</button>
+  <button style="color:rgb(14, 123, 187);" class="w3-bar-item w3-button tablink" onclick="openLink(event, 'Top')">Model Developer</button>
+  <button style="color:rgb(14, 123, 187);" class="w3-bar-item w3-button tablink" onclick="openLink(event, 'Bottom')">App Developer</button>
+  <button style="color:rgb(14, 123, 187);" class="w3-bar-item w3-button tablink" onclick="openLink(event, 'Zoom')">About</button>
+</div> -->
+
+  <div style="margin-left:50px">
+    <!-- <div class="w3-padding"><h1 style="color:rgb(223, 100, 18);"> Sensor Instance Registration </h1> -->
+
+
+    <form>
+      <p style="font-size: large; color: #ff512f;"> Sensor Instance Registration </p>
+      <label for="sensortype">Sensor type:</label>
+      <input type="text" id="sensorType">
+
+      <label for="loc">Location</label>
+      <input type="text" id="location">
+
+      <label for="sensorip">Sensor IP:</label>
+      <input type="text" id="sensorIP">
+
+      <label for="sensorport">Sensor Port:</label>
+      <input type="text" id="sensorPort"><br>
+
+      <button id="submit" type="button" onclick="sendInstanceData()">Submit</button>
+    </form>
+
+
+
+
+  </div>
+
+  <div id="Fade" class="w3-container city w3-animate-opacity" style="display:none">
+  </div>
+
+  <div id="Left" class="w3-container city w3-animate-left" style="display:none">
+  </div>
+
+  <div id="Top" class="w3-container city w3-animate-top" style="display:none">
+  </div>
+
+  <div id="Right" class="w3-container city w3-animate-right" style="display:none">
+  </div>
+
+  <div id="Bottom" class="w3-container city w3-animate-bottom" style="display:none">
+  </div>
+
+  <div id="Zoom" class="w3-container city w3-animate-zoom" style="display:none">
+  </div>
+
+  </div>
+
+  <script type="text/javascript">
+    function openLink(evt, animName) {
+      var i, x, tablinks;
+      x = document.getElementsByClassName("city");
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+      }
+      tablinks = document.getElementsByClassName("tablink");
+      for (i = 0; i < x.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" w3-red", "");
+      }
+      document.getElementById(animName).style.display = "block";
+      evt.currentTarget.className += " w3-red";
+    }
+    // console.log(document.getElementById("sensorType"))
+    function sendInstanceData() {
+      data = {
+        "sensor_type": document.getElementById("sensorType").value,
+        "sensor_location": document.getElementById("location").value,
+        "sensor_ip": document.getElementById("sensorIP").value,
+        "sensor_port": document.getElementById("sensorPort").value
+      }
+      let options = {
+        method: 'POST',
+        headers: {
+          'Content-Type':
+            'application/json;charset=utf-8'
+        },
+        body: JSON.stringify(data)
+      }
+      let request = fetch(
+        "http://127.0.0.1:5000/registerSensorInstance", options);
+      request.then(res => {
+        res.json().then(d => {
+          console.log(d);
+        })
+      })
+    }
+  </script>
+
+</body>
+
+</html>

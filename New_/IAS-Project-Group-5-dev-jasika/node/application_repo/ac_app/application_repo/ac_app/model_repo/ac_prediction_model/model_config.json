@@ -1,0 +1,8 @@
+{
+    "model": [
+        {
+            "model_name": "ac_prediction_model",
+            "model_type": "decision_tree"
+        }
+    ]
+}

@@ -1,0 +1,16 @@
+{
+    "sensor_details":{
+        "sensor_type": ["temp"],
+        "sensor_location": "vindhya-block",
+        "no_of_instances": 1
+    },
+    "controller_details":{
+        "sensor_type": "ac",
+        "sensor_location": "vindhya-block"
+    },
+    "model_details":{
+        "model_name": "ac_prediction_model",
+        "model_ip": "127.0.0.1",
+        "model_port": "5003"
+    }
+}

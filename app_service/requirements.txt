@@ -1,0 +1,7 @@
+azure-storage-file-share
+Flask==2.0.2
+Flask_PyMongo==2.3.0
+numpy==1.22.2
+pymongo==4.1.0
+requests==2.22.0
+Werkzeug==2.0.3
